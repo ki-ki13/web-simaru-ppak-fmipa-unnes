@@ -11,8 +11,9 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"php": "7.2",
-		"kunalvarma05/dropbox-php-sdk": "^0.2.1"
+		"php": "7.3.9",
+		"kunalvarma05/dropbox-php-sdk": "^0.2.1",
+		"google/apiclient": "2.10"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
