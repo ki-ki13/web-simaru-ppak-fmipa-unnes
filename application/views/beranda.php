@@ -9,7 +9,7 @@
             </div>
             <div class="judulPPAKhp">
                 <img src="<?= base_url('assets/POTO/Rectangle7.png')?>">
-                <span class="jdl">PPAK
+                <span class="jdl">PKKMB
                     FMIPA <br> 2021</span>
                 <span>Generasi Cerdas, Unggul dan <br> Bermakna</span>
             </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="Jingle inside-kotak">
             <div class="judul">
-                <span>Jingle PPAK</span></br>
+                <span>Jingle PKKMB</span></br>
                 <span>FMIPA 2021</span>
             </div>
             <div class="video-jingle">
@@ -41,14 +41,14 @@
         <div class="apa">
             <div class="content-apa">
                 <div class="judul">
-                    <span>Apa itu PPAK FMIPA?</span>
+                    <span>Apa itu PKKMB FMIPA?</span>
                 </div>
                 <div class="isi">
                     <p>
-                        Program Pengenalan Akademik dan Kemahasiswaan yang selanjutnya disingkat PPAK adalah suatu kegiatan untuk memperkenalkan mahasiswa baru tentang kegiatan akademik, budaya akademik, dan kemahasiswaan di kampus sehingga mereka menjadi lebih cepat dan mudah beradaptasi dengan kehidupan di UNNES.
+                        Program Pengenalan Akademik dan Kemahasiswaan yang selanjutnya disingkat PKKMB adalah suatu kegiatan untuk memperkenalkan mahasiswa baru tentang kegiatan akademik, budaya akademik, dan kemahasiswaan di kampus sehingga mereka menjadi lebih cepat dan mudah beradaptasi dengan kehidupan di UNNES.
                     </p>
                     <p>
-                        Di tahun 2021 ini PPAK FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
+                        Di tahun 2021 ini PKKMB FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
                     </p>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <a href="#" data-hash="slide1" class="swiper-slide">
                         <div class="inside-slide">
                             <p>
-                                Di tahun 2021 ini PPAK FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
+                                Di tahun 2021 ini PKKMB FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
                             </p>
                         </div>
                         <h3>Kalender Akademik</h3>
@@ -74,7 +74,7 @@
                     <a href="#" data-hash="slide2" class="swiper-slide">
                         <div class="inside-slide">
                             <p>
-                                Di tahun 2021 ini PPAK FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
+                                Di tahun 2021 ini PKKMB FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
                             </p>
                         </div>
                         <h3>Kalender Akademik</h3>
