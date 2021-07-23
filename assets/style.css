@@ -41,21 +41,40 @@ nav .li-menu{
   width: 20%;
   color: #027EDA;
   display: flex;
-  cursor: pointer;
   justify-content:space-between;
 }
-.li-nav:hover{
+/* .li-nav:hover{
   font-weight: bold;
-}
+} */
 nav .li-menu li{
 /*   margin: 0 5%; */
   display: inline;
 /*! font-weight: bold; */
 }
 nav .li-menu li a{
+  cursor: pointer;
    text-decoration: none;
   color: #027EDA;
 }
+.button ul{
+  border-radius: 10px;
+  text-align: center;
+  padding: 0;
+  background-color: #F2F8FF;
+  display: none;
+}
+#btn-tugas ul{
+  background-color: #C1DEFF;
+}
+.button li{
+  list-style: none;
+  padding: 3% 0;
+  transition: 0.3s linear;
+}
+.button li a{
+  color: #027EDA;
+}
+
 #logotugas{
   color: #027EDA;
 }
@@ -72,15 +91,15 @@ nav .li-menu li a{
   cursor: pointer;
 /*   flex: 1; */
 }
-nav .button:hover{
+/* nav .button:hover{
   transform: scale(1.1);
-}
+} */
 nav .masuk span{
   color: #027EDA;
   margin: 10px 0;
   display: inline-block;
 }
-nav .li-menu li .active{
+nav .li-menu .li-nav .active{
   font-weight: bold;
 }
 main .cub-back{
@@ -387,9 +406,9 @@ main .cub-back img, main .cub-back2 img{
   flex-direction: column;
 }
 
-.flex:hover{
+/* .flex:hover{
   transform: scale(1.1);
-}
+} */
 
 #flex1, #flex3,#flex5{
   background: linear-gradient(0.45deg, #037FDB -0.85%, #BCDAF5 116.63%);
@@ -436,9 +455,6 @@ box-shadow: 10px 40px 100px rgba(137, 100, 233, 0.55);
    box-shadow: 0 10px 30px rgba(5, 128, 220, 0.34);
   border-radius:10px;
 }
-.donlod:hover{
-  transform: scale(1.1);
-}
 .donlod a{
   color: white;
 }
@@ -446,10 +462,110 @@ box-shadow: 10px 40px 100px rgba(137, 100, 233, 0.55);
   padding: 0 5% 0 0;
   font-size: 18px;
 }
+/* .donlod:hover{
+  transform: scale(1.1);
+} */
 footer{
   padding: 5% 7% ;
   display: flex;
   background:linear-gradient(90deg, rgba(3,127,219,1) 0%, rgba(95,181,254,1) 100%);
+}
+#agenda{
+  width: 90%;
+  height: 120vh;
+/*   background-color: orange; */
+  padding: 0;
+  margin-top: 3%;
+}
+#agenda .swiper-slide{
+  margin: 0 auto;
+}
+#agenda .swiper-wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+#agenda .swiper-slide{
+  width: 100%;
+  margin: 0 auto;
+}
+#agenda .swiper-slide .inside-slide{ 
+  height: 88%;
+  width: 90%;
+  margin: 0 auto;
+   box-shadow: 0 20px 40px rgba(5, 128, 220, 0.34);
+}
+#agenda .swiper-button-next, #agenda .swiper-button-prev{
+  color: #027EDA; 
+}
+#agenda iframe{
+  height: 84% ;
+  border-radius:0 0 10px 10px;
+}
+.agendajudul{
+  padding: 3%;
+  background-color:#027EDA;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+#login{
+  width: 100%;
+  height: 100vh;
+ 
+}
+.login{
+  background:linear-gradient(90deg, rgba(3,127,219,1) 0%, rgba(95,181,254,1) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .card-lgn{
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)
+}
+.login .card-lgn .cont-lgn{
+  text-align: center;
+  flex: 1;
+}
+.form-group{
+  padding: 0 5%;
+  display: flex;
+  color: #027EDA;
+  margin: 10% 0 0 0;
+}
+.form-group label{
+  line-height:  50px;
+  flex: 0.25;
+}
+.lgn-input{
+  flex: 1;
+  height: 50px;
+  border-radius: 10px;
+  border:0.15px solid #027EDA;
+  font-size: 14px;
+  padding: 0 10px
+}
+.login .card-lgn .img-lgn{
+  flex: 1;
+  background-color: yellow;
+}
+.btn-submit{
+  margin:10% 0;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background-color: #C1DEFF;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #027EDA;
+  border:0.15px solid #027EDA;
+}
+.cont-lgn h2{
+  color: #027EDA;
 }
 footer .bag1, .bag2, .bag3, .bag4{
   flex: 1;
@@ -478,7 +594,23 @@ footer a{
   text-decoration: none;
   color: white;
 }
-
+@media (hover:hover){
+  .button li:hover{
+  font-weight: bold;
+}
+  .li-nav a:hover{
+    font-weight: bold;
+  }
+  nav .button:hover{
+    transform: scale(1.1);
+  }
+  .flex:hover{
+    transform: scale(1.1);
+  }
+  .donlod:hover{
+    transform: scale(1.1);
+  }
+}
 @media only screen and (max-width: 800px) {
   .judul{
     font-size: 30px;
@@ -590,6 +722,36 @@ footer a{
   }
   .tatatertib h1{
     font-size: 25px;
+  }
+
+  #agenda{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  #agenda .swiper-container{
+    width: 100%;
+  }
+  #agenda .swiper-slide{
+    margin: 0 auto;
+  }
+  #agenda .swiper-slide .inside-slide{
+    width: 100%;    
+  }
+  #agenda .swiper-slide .inside-slide iframe{
+    height: 90%;
+  }
+  #agenda .swiper-button-next, #agenda .swiper-button-prev{
+    display: none;
+  }
+  .login{
+    height: 30vh;
+  }
+  .login .card-lgn{
+    width: 80%;
+  }
+  .login .img-lgn{
+    display: none;
   }
   footer{
 /*     flex-direction: column; */
@@ -811,11 +973,47 @@ box-shadow: 10px 30px 50px rgba(137, 100, 233, 0.34);
   .topnav .logo{
     color: #027EDA;
   }
+  .tatatertib{
+    width: 100%;
+  }
   .tatatertib h1{
     font-size: 20px;
   }
   .tatatertib iframe{
     height: 40vh;
+  }
+  .donlod{
+    width: 100%;
+    border-radius: 5px;
+  }
+  #agenda-cont{
+    width: 95%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+  #agenda{
+    height: 50vh;
+  }
+  #agenda .swiper-container .swiper-slide{
+    height: 95%;
+  }
+  #agenda .swiper-slide .inside-slide iframe{
+    height: 75%;
+  }
+  #agenda .swiper-slide .inside-slide{
+    height: 100%;
+    box-shadow: none;
+  }
+  .login .card-lgn .form-group{
+    flex-direction: column;
+    height: 100px;
+    margin: 5% 0;
+  }
+  .login .card-lgn .form-group label{
+    text-align: left;
+  }
+  .login .card-lgn .btn-submit{
+    margin: 5%;
   }
 body{
     background: #F6F6F6;

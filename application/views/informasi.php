@@ -30,7 +30,7 @@
                 <span>Jingle</span>
             </div>
         </a>
-        <a href="" class="flex" id ="flex6">
+        <a href="<?= site_url('informasi/agenda')?>" class="flex" id ="flex6">
             <div class="flex-content">
                 <i class="fal fa-calendar-minus"></i>
                 <span>Agenda</span>
