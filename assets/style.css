@@ -1028,10 +1028,14 @@ body{
     text-align: center;
     background-color: #F2F8FF;
     border-radius: 100%;
-    box-shadow: 21px 17px 40px 1px rgb(125 93 235 / 51%);
+    /*box-shadow: 21px 17px 40px 1px rgb(125 93 235 / 51%);*/
     cursor: pointer;
     /* flex: 1; */
     height: 40px;
+    margin-right: -300px;
+}
+#logged-in.button {
+  box-shadow: none;
 }
 
 .img-circle {
@@ -1048,4 +1052,8 @@ body{
 #logged-in ul li {
   font-size: 1rem;
   padding: 10px;
+}
+
+#nama_user p {
+  margin: 8px;
 }

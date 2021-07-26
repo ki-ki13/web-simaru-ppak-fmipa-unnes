@@ -46,6 +46,9 @@
                     <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
                 </ul>
             </div>
+            <div id="nama_user">
+                <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
+            </div>
         <?php }?>
         <div class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
