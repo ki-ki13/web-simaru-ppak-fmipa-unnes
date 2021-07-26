@@ -1057,3 +1057,85 @@ body{
 #nama_user p {
   margin: 8px;
 }
+
+/* Penugasan */
+#penugasan {
+  /*font-family: poppin;*/
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+#penugasan #selamat-datang {
+  background-image: linear-gradient(to left, #037FDA, #A0D2F8);
+  /*padding: 10px;*/
+  justify-content: space-between;
+  display: flex;
+    height: 215px;
+    text-align: right;
+}
+
+
+#penugasan #selamat-datang div:last-child {
+  margin: 30px;
+  margin-right: 50px;
+}
+
+#penugasan #kelompok {
+  padding: 10px 0px;
+  border-radius: 20px;
+  color: #027EDA;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  margin-top: -35px;
+  padding-left: 30px;
+  width: 670px;
+  margin-left: 60px;
+  box-shadow: 0px 4px 4px #000000;
+  z-index: 100000;
+  position: relative;
+}
+
+#penugasan #kelompok h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+
+#penugasan #list-tugas {
+  margin: 30px auto;
+  padding: 50px;
+  margin-bottom: 400px;
+}
+
+#penugasan .tugas {
+  background-image: linear-gradient(to right,#037FDA, #A0D2F8);
+  padding: 20px;
+  padding-right: 75px;
+  display: inline-block;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 50px;
+  letter-spacing: 2px;
+}
+
+#penugasan .tugas-1 {
+  background-image: linear-gradient(to right,#8760E8, #B0A0E8);
+}
+
+#penugasan .tugas-2 {
+  background-image: linear-gradient(to right,#037FDA, #A0D2F8);
+}
+
+#penugasan .tugas .icon-arrow {
+  margin-top: 30px;
+  text-align: right;
+}
+
+#penugasan .tugas .icon-arrow a {
+  color: white;
+}
+
+#penugasan .tugas .icon-arrow .fa-arrow-right:before {
+    content: "\f061";
+    margin-right: -59px;
+}
