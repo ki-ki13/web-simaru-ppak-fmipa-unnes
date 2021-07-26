@@ -1020,3 +1020,32 @@ body{
     overflow-x: hidden;
   }
 }
+
+
+/* tombol masuk saat sudah login */
+#logged-in {
+  width: 40px;
+    text-align: center;
+    background-color: #F2F8FF;
+    border-radius: 100%;
+    box-shadow: 21px 17px 40px 1px rgb(125 93 235 / 51%);
+    cursor: pointer;
+    /* flex: 1; */
+    height: 40px;
+}
+
+.img-circle {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+#logged-in ul {
+  display: inline-block;
+}
+
+#logged-in ul li {
+  font-size: 1rem;
+  padding: 10px;
+}
