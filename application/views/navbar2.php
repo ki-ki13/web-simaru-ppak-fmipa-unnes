@@ -29,11 +29,20 @@
                     <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
                 </ul>
             </div>
+<<<<<<< HEAD
+            
+=======
             <div id="nama_user">
                 <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
             </div>
+>>>>>>> main
         <?php }?>
-        
+        <script>
+            if (screen && screen.width < 500) {
+                $('.masuk').attr("href", "http://localhost/web-simaru-ppak-fmipa-unnes/auth/logout")
+                console.log('detect');
+            }
+            </script>
         <div class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </div>

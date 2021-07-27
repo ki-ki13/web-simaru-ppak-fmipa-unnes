@@ -50,6 +50,12 @@
                 <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
             </div>
         <?php }?>
+        <script>
+            if (screen && screen.width < 500) {
+                $('.masuk').attr("href", "http://localhost/web-simaru-ppak-fmipa-unnes/auth/logout")
+                console.log('detect');
+            }
+            </script>
         <div class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </div>
