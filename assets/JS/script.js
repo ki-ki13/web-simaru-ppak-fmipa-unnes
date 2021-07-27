@@ -11,3 +11,10 @@ function myFunction() {
     }
 }
 
+function uploadedFile(){
+	var selectFile = document.getElementById('inputFile').value;
+	var file = document.getElementById('pathFile');
+
+	file.innerHTML = selectFile;
+	console.log(selectFile)
+}

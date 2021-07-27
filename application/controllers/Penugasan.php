@@ -15,6 +15,16 @@
 	        $this->load->view('footer');
 	        $this->load->view('js');
 		}
+
+		public function deskripsi_penugasan(){
+			$data['masuk'] = $this->session->userdata('loggedin');
+        	$data['title']="Deskripsi Penugasan";
+			$this->load->view('head',$data);
+	        $this->load->view('navbar2', $data);
+	        $this->load->view('deskripsi-penugasan');
+	        $this->load->view('footer');
+	        $this->load->view('js');
+		}
 	}
 
 ?>

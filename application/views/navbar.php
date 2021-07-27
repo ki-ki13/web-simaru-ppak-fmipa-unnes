@@ -42,7 +42,7 @@
                     <img src="<?=$user_data['profile_picture']?>" class="img-circle"/> 
                 </a>
                 <ul>
-                    <li><a href="<?= site_url('informasi')?>">Tugasku</a></li>
+                    <li><a href="<?= site_url('penugasan/list_penugasan?noKelompok=19')?>">Tugasku</a></li>
                     <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
                 </ul>
             </div>

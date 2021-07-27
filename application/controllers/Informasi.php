@@ -41,11 +41,21 @@ class Informasi extends CI_Controller {
     public function agenda()
 	{
         $data['masuk'] = $this->session->userdata('loggedin');
-        $data['title']="Agenda PPKMB";
+        $data['title']="Agenda PKKMB";
 		$this->load->view('head',$data);
         $this->load->view('navbar2',$data);
         $this->load->view('agenda');
         $this->load->view('footer');
         $this->load->view('js');
 	}
+    public function jingle()
+    {
+        $data['masuk'] = $this->session->userdata('loggedin');
+        $data['title']="Jingle PKKMB";
+        $this->load->view('head',$data);
+        $this->load->view('navbar2',$data);
+        $this->load->view('jingle');
+        $this->load->view('footer');
+        $this->load->view('js');
+    }
 }

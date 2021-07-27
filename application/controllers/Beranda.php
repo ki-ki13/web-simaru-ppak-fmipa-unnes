@@ -105,7 +105,7 @@ class Beranda extends CI_Controller {
   //       $this->load->view('js2');
 	}
 
-    public function loggedIn($data)
+    public function loggedIn($data=null)
   {
     $title['title'] = "PKKMB FMIPA";
   $this->load->view('head',$title);
