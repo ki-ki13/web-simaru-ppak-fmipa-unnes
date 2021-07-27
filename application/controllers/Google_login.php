@@ -20,7 +20,8 @@ class Google_login extends CI_Controller {
 
   $google_client->setClientSecret('HmonzQ3urCdftb2TJkqBCJU_'); //Define your Client Secret Key
 
-  $google_client->setRedirectUri('http://localhost/web-simaru-ppak-fmipa-unnes/index.php/google_login/login'); //Define your Redirect Uri
+  $google_client->setRedirectUri('http://localhost/web-simaru-ppak-fmipa-unnes/index.php/beranda'); //Define your Redirect Uri
+  $google_client->createAuthUrl();
 
   $google_client->addScope('email');
 
@@ -72,19 +73,9 @@ class Google_login extends CI_Controller {
     $this->session->set_userdata('user_data', $user_data);
    }
   }
-  $login_button = '';
-  if(!$this->session->userdata('access_token'))
-  {
-   $login_button = '<a href="'.$google_client->createAuthUrl().'" class="masuk"><span>Masuk</span></a>';
-   $data['login_button'] = $login_button;
-   // $this->load->view('beranda', $data);
-   $this->loggedIn($data);
-  }
-  else
-  {
-   // $this->load->view('beranda', $data);
-    $this->loggedIn($data);
-  }
+  
+  
+  
  }
 
  function logout()

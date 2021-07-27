@@ -28,6 +28,7 @@ foreach($penugasan['individu'] as $k=>$id){
 
 
 	?>
+    <a href="<?=base_url()?>index.php/Submit?list=1">List Files and Folder</a>
   <form action="<?=base_url()?>index.php/submit/addFolder" method="GET" enctype="multipart/form-data" >
         <label for="">Nama Tugas</label>
         <input type="text" name="namaFolder" id="namaFile"><br>

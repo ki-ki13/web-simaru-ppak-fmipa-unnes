@@ -10,9 +10,6 @@
         </div>
         <?php if(isset($login_button) AND !isset($_SESSION['user_data'])){?>
         <div class="button" id="btn-beranda">
-            <!-- <a href="<?= site_url('auth/login')?>" class="masuk">
-                <span>Masuk</span>
-            </a> -->
             <?php echo $login_button; ?>
         </div>
         <?php }else{
@@ -29,13 +26,11 @@
                     <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
                 </ul>
             </div>
-<<<<<<< HEAD
-            
-=======
+
             <div id="nama_user">
                 <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
             </div>
->>>>>>> main
+
         <?php }?>
         <script>
             if (screen && screen.width < 500) {
