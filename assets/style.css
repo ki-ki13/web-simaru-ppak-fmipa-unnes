@@ -1035,3 +1035,251 @@ body{
     overflow-x: hidden;
   }
 }
+
+
+/* tombol masuk saat sudah login */
+#logged-in {
+  width: 40px;
+    text-align: center;
+    background-color: #F2F8FF;
+    border-radius: 100%;
+    /*box-shadow: 21px 17px 40px 1px rgb(125 93 235 / 51%);*/
+    cursor: pointer;
+    /* flex: 1; */
+    height: 40px;
+    margin-right: -300px;
+}
+#logged-in.button {
+  box-shadow: none;
+}
+
+.img-circle {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+#logged-in ul {
+  display: inline-block;
+}
+
+#logged-in ul li {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+#nama_user p {
+  margin: 8px;
+}
+
+
+
+
+
+
+/* Penugasan */
+#penugasan {
+  /*font-family: poppin;*/
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+#penugasan #selamat-datang {
+  background-image: linear-gradient(to left, #037FDA, #A0D2F8);
+  /*padding: 10px;*/
+  justify-content: space-between;
+  display: flex;
+    height: 215px;
+    text-align: right;
+}
+
+
+#penugasan #selamat-datang div:last-child {
+  margin: 30px;
+  margin-right: 50px;
+}
+
+#penugasan #kelompok {
+  padding: 10px 0px;
+  border-radius: 20px;
+  color: #027EDA;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  margin-top: -35px;
+  padding-left: 30px;
+  width: 670px;
+  margin-left: 60px;
+  box-shadow: 0px 4px 4px #000000;
+  z-index: 100000;
+  position: relative;
+}
+
+#penugasan #kelompok h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+
+#penugasan #list-tugas {
+  margin: 30px auto;
+  padding: 50px;
+  margin-bottom: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#penugasan .tugas {
+  background-image: linear-gradient(to right,#037FDA, #A0D2F8);
+  padding: 20px;
+  padding-right: 75px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 50px;
+  letter-spacing: 2px;
+  flex-grow: 4;
+}
+
+#penugasan .tugas-1 {
+  background-image: linear-gradient(to right,#8760E8, #B0A0E8);
+}
+
+#penugasan .tugas-2 {
+  background-image: linear-gradient(to right,#037FDA, #A0D2F8);
+}
+
+#penugasan .tugas .icon-arrow {
+  margin-top: 30px;
+  text-align: right;
+}
+
+#penugasan .tugas .icon-arrow a {
+  color: white;
+}
+
+#penugasan .tugas .icon-arrow .fa-arrow-right:before {
+    content: "\f061";
+    margin-right: -59px;
+}
+
+/* Deskripsi Tugas*/
+
+#deskripsi {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas:
+    'top-left right'
+    'bottom-left right';
+  grid-template-columns: 35% 60%;
+  padding: 130px;
+  padding-top: 0px;
+}
+
+#deskripsi .item {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  /*width: 600px;*/
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #42A0E7;
+}
+
+
+#deskripsi .item .title {
+  background-color: #037FDB;
+  padding: 30px;
+  color: #FFFFFF;
+}
+
+#deskripsi .item p {
+  padding: 40px;
+}
+
+
+#deskripsi .item .title h2 {
+  margin: 0px;
+}
+
+#deskripsi #top-left {
+  grid-area: top-left;
+
+}
+#deskripsi #bottom-left {
+  grid-area: bottom-left;
+  text-align: center;
+}
+#deskripsi #right {
+  grid-area: right;
+}
+
+#deskripsi #bottom-left p {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#deskripsi #bottom-left #submit {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #C1DEFF;
+  color: #027EDA;
+  border-radius: 10px;
+  box-shadow: none;
+  width: 200px;
+}
+
+#deskripsi #bottom-left #submit:hover,
+#deskripsi #bottom-left #submit:hover input {
+  background-color: #A9D1FF;
+  cursor: pointer;
+}
+
+#deskripsi #bottom-left #submit input {
+      background-color: #C1DEFF;
+    border: none;
+    color: #027EDA;
+    font-size: 1.5em;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input {
+  margin-top: 20px;
+  width: 90px;
+  overflow: hidden;
+}
+
+
+.custom-file-input::before {
+  content: url('./POTO/upload-button.png');
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: none;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/*jingle*/
+.jingle #box {
+  border: 5px solid #5FB5FE;
+  border-radius: 30px;
+}
+
+.jingle #box .item {
+  background-color: #C4C4C4;
+  width: 1175px;
+  height: 465px;
+}

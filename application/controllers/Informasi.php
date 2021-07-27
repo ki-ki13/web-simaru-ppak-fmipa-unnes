@@ -41,7 +41,7 @@ class Informasi extends CI_Controller {
     public function agenda()
 	{
         $data['masuk'] = $this->session->userdata('loggedin');
-        $data['title']="Agenda PPKMB";
+        $data['title']="Agenda PKKMB";
 		$this->load->view('head',$data);
         $this->load->view('navbar2',$data);
         $this->load->view('agenda');
@@ -49,13 +49,13 @@ class Informasi extends CI_Controller {
         $this->load->view('js');
 	}
     public function jingle()
-	{
+    {
         $data['masuk'] = $this->session->userdata('loggedin');
-        $data['title']="Agenda PPKMB";
-		$this->load->view('head',$data);
+        $data['title']="Jingle PKKMB";
+        $this->load->view('head',$data);
         $this->load->view('navbar2',$data);
         $this->load->view('jingle');
         $this->load->view('footer');
         $this->load->view('js');
-	}
+    }
 }
