@@ -121,9 +121,10 @@ class Submit extends CI_Controller {
 		    $success = $this->insert_file_to_drive( $file_tmp, $fileName, $folder_id);
 
 		    if( $success){
-			echo "file uploaded successfully";
+		    	echo "<script>alert('File Berhasil Diupload :)');document.location.href = '".site_url('penugasan?noKelompok=2')."'</script>";
+			// echo "file uploaded successfully";
 		    } else { 
-			echo "Something went wrong.";
+			echo "Oops, ada kesalahan. Silahkan kembali lagi";
 		    }
 		}
 
@@ -307,7 +308,7 @@ class Submit extends CI_Controller {
 
 		try{
 			$this->db->insert('folder', $data);
-			echo "success";
+			echo "<script>alert('Tugas Berhasil Ditambahkan :)');document.location.href = '".site_url('admin')."'</script>";
 		}catch(\Throwable $th){
 			$this->dd($th);
 		}	
