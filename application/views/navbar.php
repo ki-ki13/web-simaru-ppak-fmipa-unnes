@@ -16,7 +16,7 @@
         </div>
         <?php }else{?>
             <div class="button" id="btn-beranda">
-                <a href="" class="masuk">
+                <a href="<?= site_url('informasi')?>" class="masuk">
                     <span><i class="fa fa-user"></i></span>
                 </a>
                 <ul>
@@ -25,6 +25,12 @@
                 </ul>
             </div>
         <?php }?>
+        <script>
+            if (screen && screen.width < 500) {
+                $('.masuk').attr("href", "http://localhost/web-simaru-ppak-fmipa-unnes/auth/logout")
+                console.log('detect');
+            }
+            </script>
         <div class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </div>

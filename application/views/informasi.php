@@ -24,7 +24,7 @@
                 <span>Absensi</span>
             </div>
         </a>
-        <a href="" class="flex" id ="flex5">
+        <a href="<?= site_url('informasi/jingle')?>" class="flex" id ="flex5">
             <div class="flex-content">
                 <i class="fal fa-music"></i>
                 <span>Jingle</span>
