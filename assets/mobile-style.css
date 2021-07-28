@@ -33,6 +33,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
+    z-index: 100;
     display: block;
     background: linear-gradient(90deg, rgba(3,127,219,1) 0%, rgba(95,181,254,1) 100%);
     transition: all 1s ease-in-out;
@@ -80,6 +81,12 @@
   .topnavresponsive #btn-tugas{
     background-color: transparent;
   }
+  #logged-in {
+    margin: 0 33%;
+  }
+  #nama_user {
+    display: none;
+  } 
   #mainCont {
     font-size: 40px;
   }
@@ -157,6 +164,24 @@
   .jinggel .jinggel-vid .lirik{
   display: none;
   }
+  #penugasan #kelompok {
+    font-size: 20px;
+    width: 500px;
+  }
+  #penugasan #selamat-datang div:last-child h1 {
+    font-size: 1em;
+  }
+  #deskripsi {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'top-left'
+    'right'
+    'bottom-left';
+  grid-template-columns: 100%;
+  padding: 33px;
+  padding-top: 30px;
+}
   footer{
 /*     flex-direction: column; */
     flex-wrap:wrap;
@@ -434,6 +459,28 @@
 
    
   }
+
+  #penugasan #selamat-datang {
+    background-image: linear-gradient(to left, #037FDA, #A0D2F8);
+    justify-content: space-between;
+    display: flex;
+    height: 150px;
+    text-align: right;
+  }
+
+  #penugasan #selamat-datang div:last-child {
+    width: 700px;
+    margin-left: -400px;
+  }
+
+  #penugasan #kelompok {
+    font-size: 15px;
+    width: 250px;
+  }
+  #penugasan #kelompok h1 {
+    margin: 0;
+    font-size: 1.25em;
+}
   body{
     background: #F6F6F6;
     overflow-x: hidden;

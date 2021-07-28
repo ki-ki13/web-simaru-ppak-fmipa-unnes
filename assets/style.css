@@ -664,7 +664,7 @@ footer a{
     cursor: pointer;
     /* flex: 1; */
     height: 40px;
-    margin-right: -300px;
+    margin: auto;
 }
 #logged-in.button {
   box-shadow: none;
@@ -685,7 +685,9 @@ footer a{
   font-size: 1rem;
   padding: 10px;
 }
-
+#nama_user {
+  width: 50px;
+}
 #nama_user p {
   margin: 8px;
 }
@@ -708,13 +710,21 @@ footer a{
   justify-content: space-between;
   display: flex;
     height: 215px;
+    width: 100%;
     text-align: right;
 }
+#penugasan #selamat-datang div:first-child, img {
+    height: inherit;
+    width: inherit;
+  }
 
 
 #penugasan #selamat-datang div:last-child {
   margin: 30px;
   margin-right: 50px;
+}
+#penugasan #selamat-datang div:last-child h1{
+  font-size: 1.5em;
 }
 
 #penugasan #kelompok {
@@ -728,7 +738,6 @@ footer a{
   width: 670px;
   margin-left: 60px;
   box-shadow: 0px 4px 4px #000000;
-  z-index: 100000;
   position: relative;
 }
 
@@ -753,6 +762,7 @@ footer a{
   display: inline-block;
   border-radius: 10px;
   margin-right: 50px;
+  margin-bottom: 50px;
   letter-spacing: 2px;
   flex-grow: 4;
 }

@@ -36,19 +36,23 @@
             $user_data = $this->session->userdata('user_data');
 
             ?>
-            <div class="button" id="logged-in">
-                <a href="" class="masuk">
-                    <!-- <span><i class="fa fa-user"></i></span> -->
-                    <img src="<?=$user_data['profile_picture']?>" class="img-circle"/> 
-                </a>
-                <ul>
-                    <li><a href="<?= site_url('penugasan/list_penugasan?noKelompok=19')?>">Tugasku</a></li>
-                    <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
-                </ul>
+            <div>
+                <div class="button" id="logged-in">
+                    <p href="" class="masuk">
+                        <!-- <span><i class="fa fa-user"></i></span> -->
+                        <img src="<?=$user_data['profile_picture']?>" class="img-circle"/> 
+                    </p>
+                    <ul>
+                        <li><div id="nama_user">
+                    <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
+                </div></li>
+                        <li><a href="<?= site_url('informasi/penugasan')?>">Tugasku</a></li>
+                        <li><a href="<?= site_url('google_login/logout')?>">Keluar</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="nama_user">
-                <p><?=$user_data['first_name']. " " . $user_data['last_name']?></p>
-            </div>
+            
+            
         <?php }?>
         <script>
             if (screen && screen.width < 500) {
