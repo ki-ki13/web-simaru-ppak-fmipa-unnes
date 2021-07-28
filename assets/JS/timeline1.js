@@ -40,7 +40,7 @@ function makeCircles() {
     var lastInt = ((lastMonth - firstMonth) * 30) + (lastDay - firstDay);
 
     //Draw first date circle
-    $("#line").append('<div class="circle" id="circle0" style="left: ' + 0 + '%;"><div class="popupSpan">' + dateSpan(dates[0]) + '</div></div>');
+    $("#line").append('<div class="circle" id="circle0"><div class="popupSpan">' + dateSpan(dates[0]) + '</div></div>');
     
     // $("#mainCont").append('<span id="span0" class="center">' + dateSpan(dates[0]) + '</span>');
 
@@ -56,13 +56,13 @@ function makeCircles() {
       var relativeInt = thisInt / lastInt;
 
       //Draw the date circle
-      $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + relativeInt * 100 + '%;"><div class="popupSpan">' + dateSpan(dates[i]) + '</div></div>');
+      $("#line").append('<div class="circle" id="circle' + i + '"><div class="popupSpan">' + dateSpan(dates[i]) + '</div></div>');
       
     //   $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
     }
 
     //Draw the last date circle
-    $("#line").append('<div class="circle" id="circle' + i + '" style="left: ' + 99 + '%;"><div class="popupSpan">' + dateSpan(dates[dates.length - 1]) + '</div></div>'); 
+    $("#line").append('<div class="circle" id="circle' + i + '"><div class="popupSpan">' + dateSpan(dates[dates.length - 1]) + '</div></div>'); 
     
     // $("#mainCont").append('<span id="span' + i + '" class="right">' + dateSpan(dates[i]) + '</span>');
   }

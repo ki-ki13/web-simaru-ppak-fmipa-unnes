@@ -35,7 +35,7 @@
                 <span>FMIPA 2021</span>
             </div>
             <div class="video-jingle">
-                <iframe class="video" src=""></iframe>
+                <video class="video" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
             </div>
         </div>
         <div class="apa">
@@ -117,7 +117,32 @@
         </div>
         <div class="sambutan">
             <div class="judul">Sambutan</div>
-            <div id="vid-sambutan" class="video-jingle">
-                <iframe class="video" src="" frameborder="1"></iframe>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <a href="#" data-hash="slide1" class="swiper-slide">
+                        <div class="inside-slide">
+                            <div class="video-jingle">
+                                <video class="video video-sambutan" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
+                            </div>
+                        </div>
+                        <h3>Sambutan Dekan FMIPA</h3>
+                    </a>
+                    <a href="#" data-hash="slide2" class="swiper-slide">
+                        <div class="inside-slide">
+                            <div class="video-jingle">
+                                <video class="video video-sambutan" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
+                            </div>
+                        </div>
+                        <h3>Sambutan Wakil Dekan I FMIPA</h3>
+                    </a>
+                    <a href="#" data-hash="slide3" class="swiper-slide">Slide 3</a>
+                    <a href="#" data-hash="slide4" class="swiper-slide">Slide 4</a>
+                    <a href="#" data-hash="slide5" class="swiper-slide">Slide 5</a>
+                    
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
             </div>
+            
         </div>
