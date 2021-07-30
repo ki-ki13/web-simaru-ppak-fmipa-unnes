@@ -89,9 +89,9 @@
   }
 
   #logged-in ul{
-    position: absolute;
+    position: relative;
     width: 200px;
-    left: 37%;
+    left: 0%;
     /*! right: 50%; */
   }
   #nama_user {
