@@ -5,6 +5,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  html, body{
+    overflow-x: hidden;
+  }
   .judul{
     font-size: 30px;
   }
@@ -82,7 +85,14 @@
     background-color: transparent;
   }
   #logged-in {
-    margin: 0 33%;
+    width: 200px;
+  }
+
+  #logged-in ul{
+    position: absolute;
+    width: 200px;
+    left: 37%;
+    /*! right: 50%; */
   }
   #nama_user {
     display: none;
@@ -108,16 +118,16 @@
   }
  
   main .cub-back2 img, main .cub-back img{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
   }
   main .cub-back{
     top: 0;
-    right: -10%;
+    right: 30px;
   }
   main .cub-back2{
     bottom: 0;
-    left: -10%;
+    left: 30px;
   }
   .PPAK{
     height: 50vh;

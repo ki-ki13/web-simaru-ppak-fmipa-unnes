@@ -13,20 +13,19 @@
             <div class="bag2">
                 <h3>PPAK FMIPA</h3>
                 <ul>
-                    <li><a href="">Agenda</a></li>
-                    <li><a href="">Penugasan</a></li>
+                    <li><a href="<?= site_url('informasi')?>">Informasi</a></li>
                     <li><a href="">Galeri</a></li>
                 </ul>
             </div>
             <div class="bag3">
                 <h3>Jurusan</h3>
                 <ul>
-                    <li><a href="">Matematika</a></li>
-                    <li><a href="">Fisika</a></li>
-                    <li><a href="">Biologi</a></li>
-                    <li><a href="">Kimia</a></li>
-                    <li><a href="">Ipa Terpadu</a></li>
-                    <li><a href="">Ilmu Komputer</a></li>
+                    <li><a href="https://matematika.unnes.ac.id/">Matematika</a></li>
+                    <li><a href="http://fisika.unnes.ac.id/main/">Fisika</a></li>
+                    <li><a href="https://biologi.unnes.ac.id/">Biologi</a></li>
+                    <li><a href="https://kimia.unnes.ac.id/v1/">Kimia</a></li>
+                    <li><a href="http://ipa.unnes.ac.id/">Ipa Terpadu</a></li>
+                    <li><a href="https://ilkom.unnes.ac.id/">Ilmu Komputer</a></li>
                 </ul>
             </div>
             <div class="bag4">

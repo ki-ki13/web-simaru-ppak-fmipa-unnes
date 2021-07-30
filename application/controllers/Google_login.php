@@ -20,7 +20,7 @@ class Google_login extends CI_Controller {
 
   $google_client->setClientSecret('HmonzQ3urCdftb2TJkqBCJU_'); //Define your Client Secret Key
 
-  $google_client->setRedirectUri('http://localhost/web-simaru-ppak-fmipa-unnes/index.php/beranda'); //Define your Redirect Uri
+  $google_client->setRedirectUri('http://localhost/web-simaru-ppak-fmipa-unnes/beranda'); //Define your Redirect Uri
   $google_client->createAuthUrl();
 
   $google_client->addScope('email');

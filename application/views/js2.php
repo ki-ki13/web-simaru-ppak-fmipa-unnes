@@ -33,7 +33,7 @@
       });
 
       //kotak-melayang
-        const callback = function(entries) {
+        const kutak = function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
             entry.target.classList.add("muncul");
@@ -43,7 +43,7 @@
         });
         };
 
-        const observer = new IntersectionObserver(callback);
+        const observer = new IntersectionObserver(kutak);
 
         const targets = document.querySelectorAll(".inside-kotak");
         targets.forEach(function(target) {
@@ -52,9 +52,9 @@
     </script>
     <script>
          if (screen && screen.width > 500) {
-            document.write('<script type="text/javascript" src="assets/JS/timeline1.js"><\/script>');
+            document.write('<script type="text/javascript" src="<?= base_url('assets/JS/timeline1.js')?>"><\/script>');
             }else{
-            document.write('<script type="text/javascript" src="assets/JS/timeline2.js"><\/script>');
+            document.write('<script type="text/javascript" src="<?= base_url('assets/JS/timeline1.js')?>"><\/script>');
             }
     </script>
 

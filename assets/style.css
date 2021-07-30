@@ -12,7 +12,7 @@ a{
   position: absolute;
   top: 0;
   z-index: -10;
-  min-height: 100vh;
+  min-height: 120vh;
   width: 100%;
   background:url("./POTO/Background.png");
   background-repeat: no-repeat;
@@ -69,6 +69,9 @@ nav .li-menu li a{
   padding: 3% 0;
   transition: 0.3s linear;
 }
+.button li a{
+  color: #027EDA;
+}
 
 #logotugas{
   color: #027EDA;
@@ -110,7 +113,7 @@ main .cub-back2{
   left:-10%;
 }
 .PPAK{
-  height: 70vh;
+  height: 90vh;
   width: 110%;
   /*! position: absolute; */
   margin-left: -6%;
@@ -145,7 +148,6 @@ main .cub-back img, main .cub-back2 img{
 }
 .Jingle{
   background-color: #E3EEF5;
-  margin-top: 3.8%;
   padding-bottom:  10%;
   padding-top: 2%;
 }
@@ -635,15 +637,15 @@ footer a{
   color: white;
 }
 @media (hover:hover){
-  .button li:hover{
+  .button #can-hover:hover{
   font-weight: bold;
 }
   .li-nav a:hover{
     font-weight: bold;
   }
-  nav .button:hover{
+  /* nav .button:hover{
     transform: scale(1.1);
-  }
+  } */
   .flex:hover{
     transform: scale(1.1);
   }
@@ -656,7 +658,7 @@ footer a{
 
 /* tombol masuk saat sudah login */
 #logged-in {
-  width: 40px;
+    width: 40px;
     text-align: center;
     background-color: #F2F8FF;
     border-radius: 100%;
@@ -669,6 +671,10 @@ footer a{
 #logged-in.button {
   box-shadow: none;
 }
+#logged-in p{
+  margin-top: 0;
+}
+
 
 .img-circle {
   border-radius: 100%;
@@ -678,7 +684,10 @@ footer a{
 }
 
 #logged-in ul {
-  display: inline-block;
+  display: none;
+  position: absolute;
+  width: 200px;
+  right: 20px;
 }
 
 #logged-in ul li {
@@ -686,7 +695,8 @@ footer a{
   padding: 10px;
 }
 #nama_user {
-  width: 50px;
+  width: 100%;
+  cursor:auto;
 }
 #nama_user p {
   margin: 8px;
@@ -731,13 +741,11 @@ footer a{
   padding: 10px 0px;
   border-radius: 20px;
   color: #027EDA;
-  font-size: 20px;
   background-color: #FFFFFF;
-  margin-top: -35px;
-  padding-left: 30px;
-  width: 670px;
-  margin-left: 60px;
-  box-shadow: 0px 4px 4px #000000;
+  margin: -2% 0 0 7%;
+  padding: 20px 30px 20px 30px;
+  width: 45%;
+ box-shadow: 0px 10px 30px rgba(15, 133, 221, 0.27);
   position: relative;
 }
 

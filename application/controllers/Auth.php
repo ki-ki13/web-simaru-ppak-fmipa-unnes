@@ -38,7 +38,7 @@ class Auth extends CI_Controller {
 			$nim = htmlspecialchars($this->input->post('nim'));
 	
 			// CEK KE DATABASE BERDASARKAN NAMA
-			$cek_login = $this->auth_model->cek_login($nim); 
+			$cek_login = $this->auth_model->cek_login($nim);  
 				
 			if(($cek_login == FALSE)and($nama != $cek_login->nama)){
                 $this->session->set_flashdata('msg', 'Nama atau nim yang kamu masukkan salah, coba lagi 😊');
