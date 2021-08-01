@@ -66,10 +66,11 @@ class Informasi extends CI_Controller {
     public function penugasan()
     {
         if(!isset($_SESSION['user_data'])){
-            echo "<script>
-            alert('Silahkan login terlebih dahulu :)');
-            document.location.href = '".site_url('informasi')."'</script>";
-            // redirect('informasi');
+            // echo "<script>
+            // alert('Silahkan login terlebih dahulu :)');
+            // document.location.href = '".site_url('informasi')."'</script>";
+            $this->session->set_flashdata('lgn', 'Silahkan login menggunakan akun google unnes dahulu ya.. 😊');
+            redirect('informasi');
         }else{
             redirect('penugasan?noKelompok=2');
         }

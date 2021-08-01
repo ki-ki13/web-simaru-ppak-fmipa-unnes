@@ -1,4 +1,17 @@
 <div class="super-wrapper" id="Superwrap">
+<?php if ($this->session->flashdata('lgn')): ?>
+        <small>
+            <script>
+                Swal.fire({
+                    title: "Maaf",
+                    text: "<?php echo $this->session->flashdata('lgn'); ?>",
+                    timer: 3000,
+                    showConfirmButton: false,
+                    type: 'success'
+                    });
+            </script>
+        </small>
+    <?php endif; ?> 
     <div class="content">
         <a href="<?= site_url('informasi/tatib')?>" class="flex" id ="flex1">
             <div class="flex-content">

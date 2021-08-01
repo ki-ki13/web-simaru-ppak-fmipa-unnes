@@ -17,8 +17,11 @@
 	<div id="bottom-left">
 			<form action="<?=base_url()?>index.php/Submit" method="post" enctype="multipart/form-data" >
 				<div class="item">
-					<input type="file" name="file" class="custom-file-input" id="inputFile"><br>
-			        <p>Upload disini</p>
+					<div class ="input-group">
+						<label for="inputFile" onclick="uploadedFile()"> <i class="far fa-angle-double-up"></i><span>Upload disini</span></label>
+						<input type="file" name="file" class="custom-file-input" id="inputFile">	
+					</div>
+			        
 
 			        <div class="properties" style="display: none">
 			        	<input type="text" name="namaFile" id="namaFile" value="<?=$nama?>"><br>
@@ -31,7 +34,7 @@
 				</div>
 
 				<div class="item" id="submit">
-					<input type="submit" name="submit" value="Kumpulkan" oninput="uploadedFile()">
+					<input type="submit" name="submit" value="Kumpulkan">
 				</div>
     	</form>
 	</div>

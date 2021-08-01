@@ -99,7 +99,7 @@ class Submit extends CI_Controller {
 		    if( empty( $_FILES["file"]['tmp_name'] ) ){
 			echo "Go back and Select file to upload.";
 			exit;
-		    }
+		    } 
 		    // File Upload 
 		    $file_ori_name = basename($_FILES['file']['name']);
 		    $file_tmp  = $_FILES["file"]["tmp_name"];

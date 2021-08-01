@@ -12,9 +12,9 @@ function myFunction() {
 }
 
 function uploadedFile(){
-	var selectFile = document.getElementById('inputFile').value;
-	var file = document.getElementById('pathFile');
-
-	file.innerHTML = selectFile;
-	console.log(selectFile)
+    $('#inputFile').change(function() {
+        var i = $(this).prev('label').clone();
+        var file = $('#inputFile')[0].files[0].name;
+        $(this).prev('label').find('span').html(file);
+      });
 }
