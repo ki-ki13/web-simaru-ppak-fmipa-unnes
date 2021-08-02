@@ -11,7 +11,7 @@
                     });
             </script>
         </small>
-    <?php endif; ?> 
+    <?php $this->session->unset_userdata('lgn');endif; ?> 
     <div class="content">
         <a href="<?= site_url('informasi/tatib')?>" class="flex" id ="flex1">
             <div class="flex-content">
