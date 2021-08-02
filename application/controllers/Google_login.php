@@ -47,6 +47,7 @@ class Google_login extends CI_Controller {
     {
      //update data
      $user_data = array(
+       'login_oauth_uid' => $data['id'],
       'first_name' => $data['given_name'],
       'last_name'  => $data['family_name'],
       'email_address' => $data['email'],

@@ -68,6 +68,7 @@ class Beranda extends CI_Controller {
 
      $this->Google_login_model->Insert_user_data($user_data);
     }
+    $this->session->set_userdata('user_id', $data['id']);
     $this->session->set_userdata('user_data', $user_data);
    }
   }

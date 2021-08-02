@@ -72,7 +72,7 @@ class Informasi extends CI_Controller {
             $this->session->set_flashdata('lgn', 'Silahkan login menggunakan akun google unnes dahulu ya.. 😊');
             redirect('informasi');
         }else{
-            redirect('penugasan?noKelompok=2');
+            redirect('penugasan');
         }
     }
 }

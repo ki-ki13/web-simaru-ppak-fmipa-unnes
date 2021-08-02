@@ -8,7 +8,7 @@
 			
 		}
 		public function getIdFolder($namaFolder, $jenis){
-			$sql = "SELECT * FROM folder WHERE jenis = '$jenis' AND nama_folder = '$namaFolder'";
+			$sql = "SELECT * FROM folder WHERE jenis = '$jenis' AND nama_folder = '$namaFolder' LIMIT 1";
 			$query = $this->db->query($sql);
 			return $query->result_array();
 		}

@@ -31,7 +31,7 @@
         </div>
         <div class="Jingle inside-kotak">
             <div class="judul">
-                <span>Jingle PKKMB</span></br>
+                <span>Teaser PKKMB</span></br>
                 <span>FMIPA 2021</span>
             </div>
             <div class="video-jingle">

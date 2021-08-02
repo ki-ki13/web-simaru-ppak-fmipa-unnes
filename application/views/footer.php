@@ -1,7 +1,7 @@
 <footer>
             <div class="bag1">
-                <h3>PPAK FMIPA UNNES</h3>
-                <span>Website resmi PPAK FMIPA UNNES 2021</span>
+                <h3>PPKMB FMIPA UNNES</h3>
+                <span>Website resmi PPKMB FMIPA UNNES 2021</span>
                 <h3>IKUTI KAMI</h3>
                 <div class="medsos">
                     <a href="https://www.instagram.com/ppakfmipaunnes/"><i class="fab fa-instagram"></i></a>

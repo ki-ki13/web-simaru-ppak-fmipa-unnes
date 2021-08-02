@@ -1,7 +1,7 @@
 <?php
 	$user_data = $this->session->userdata('user_data');
 	$nama = $user_data['first_name']. " ". $user_data['last_name'];
-	$noKelompok = $_GET['noKelompok'];
+	// $noKelompok = $_GET['noKelompok'];
 ?>
 
 <div id="penugasan">
@@ -17,7 +17,8 @@
    </div>
 
    <div id="kelompok">
-   		<h1>Kelompok : <?=$noKelompok?></h1>
+   		<!-- <-?=var_dump($noKelompok->kelompok)?> -->
+   		<h1>Kelompok : <?=$noKelompok->kelompok?></h1>
    </div>
 
    <div id="list-tugas">
@@ -38,7 +39,7 @@
 	   			<p>Status : Belum dikumpulkan</p>
 	   			<div class="icon-arrow">
 			   		<!-- <a href="<-?=base_url()?>index.php/Load?namaTugas=<-?=$row['nama_folder']?>&idMaba=2&jenisTugas=<-?=$row['jenis']?>"><i class="fa fa-arrow-right" aria-hidden="true" style="font-size: 30px;"></i></a> -->
-			   		<a href="<?=base_url()?>index.php/penugasan/deskripsi_penugasan?jenisTugas=<?=$row['jenis']?>&noKelompok=<?=$noKelompok?>&namaTugas=<?=$row['nama_folder']?>"><i class="fa fa-arrow-right" aria-hidden="true" style="font-size: 30px;"></i></a>
+			   		<a href="<?=base_url()?>index.php/penugasan/deskripsi_penugasan?jenisTugas=<?=$row['jenis']?>&noKelompok=<?=$noKelompok->kelompok?>&namaTugas=<?=$row['nama_folder']?>"><i class="fa fa-arrow-right" aria-hidden="true" style="font-size: 30px;"></i></a>
 			   </div>
 	   		</div>
 		<?php
