@@ -20,7 +20,7 @@
 			<form action="<?=base_url()?>index.php/Submit" method="post" enctype="multipart/form-data" >
 				<div class="item">
 					<div class ="input-group">
-						<label for="inputFile" onclick="uploadedFile()"> <i class="far fa-angle-double-up"></i><span>Upload disini</span></label>
+						<label for="inputFile" onclick="uploadedFile()"> <i class="far fa-angle-double-down"></i><span>Upload disini</span></label>
 						<input type="file" name="file" class="custom-file-input" id="inputFile">	
 					</div>
 			        
