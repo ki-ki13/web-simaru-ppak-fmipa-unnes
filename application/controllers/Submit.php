@@ -13,6 +13,7 @@ class Submit extends CI_Controller {
 		parent::__construct();
 		// require $_SERVER['DOCUMENT_ROOT']."/PPAK_FMIPA/asset/google-drive.php";
 		require $_SERVER['DOCUMENT_ROOT']."/web-simaru-ppak-fmipa-unnes/vendor/autoload.php";
+		$this->load->library('session');
 	}
 	public function client(){
 		// Get the API client and construct the service object.
@@ -107,7 +108,7 @@ class Submit extends CI_Controller {
 		    $fileName  = $_POST['namaFile'].".".$file_type;
 
 		    
-	            $getIdFolder = $this->FolderIdModel->getIdFolder($namaTugas, $jenisTugas);
+	        $getIdFolder = $this->FolderIdModel->getIdFolder($namaTugas, $jenisTugas);
 		    $folderId = $getIdFolder[0]['folder_id'];
 		    // jika jenis_tugas = individu
 		    if($jenisTugas == "individu"){
@@ -115,16 +116,22 @@ class Submit extends CI_Controller {
 			    $folder_id = $this->create_folder( $namaFolder, $folderId );
 		    }
 		    else if($jenisTugas == "kelompok"){
-		   	$folder_id = $folderId; 
-			$fileName = "Kelompok_".$noKelompok.".".$file_type;
+		   		$folder_id = $folderId; 
+				$fileName = "Kelompok_".$noKelompok.".".$file_type;
 		    }
-		    $success = $this->insert_file_to_drive( $file_tmp, $fileName, $folder_id);
-
+			if ($_FILES['file']['size'] < 5 * 1024 * 1024 ){
+				$success = $this->insert_file_to_drive($file_tmp, $fileName, $folder_id);
+			}else{
+				$success = $this->upload_chunk( $file_tmp, $fileName, $folder_id);
+			}
+		    
 		    if( $success){
-		    	echo "<script>alert('File Berhasil Diupload :)');document.location.href = '".site_url('penugasan?noKelompok=2')."'</script>";
-			// echo "file uploaded successfully";
+				redirect('penugasan?noKelompok=2');
+				
+		    	// echo "<script>alert('File Berhasil Diupload :)');document.location.href = '".site_url('penugasan?noKelompok=2')."'</script>";
+				// echo "file uploaded successfully";
 		    } else { 
-			echo "Oops, ada kesalahan. Silahkan kembali lagi";
+				echo "<script>alert('Upload gagal, silahkan mencoba lagi');document.location.href = '".site_url('penugasan/deskripsi_penugasan')."'</script>";
 		    }
 		}
 
@@ -254,6 +261,7 @@ class Submit extends CI_Controller {
 
 	    $file->setName( $file_name );
 
+
 	    if( !empty( $parent_file_id ) ){
 		$file->setParents( [ $parent_file_id ] );        
 	    }
@@ -312,6 +320,68 @@ class Submit extends CI_Controller {
 		}catch(\Throwable $th){
 			$this->dd($th);
 		}	
+	}
+
+	public function upload_chunk($file_path, $file_name,$parent_file_id=null){
+		$client = $this->client();
+		
+		
+		$service = new Google_Service_Drive( $client );
+	    $file = new Google_Service_Drive_DriveFile();
+
+	    $file->setName( $file_name );
+		if( !empty( $parent_file_id ) ){
+			$file->setParents( [ $parent_file_id ] );        
+		}
+		$chunkSizeBytes = 1 * 1024 * 1024;
+		// $mimeType = $this->mimeType;
+		$client->setDefer(true);
+		$request = $service->files->create($file);
+
+		// Create a media file upload to represent our upload process.
+		$media = new Google_Http_MediaFileUpload(
+		  $client,
+		  $request,
+		  'application/octet-stream',
+		  null,
+		  true,
+		  $chunkSizeBytes
+		);
+		$media->setFileSize(filesize($file_path));
+
+		// Upload the various chunks. $status will be false until the process is
+		// complete.
+		$status = false;
+		$handle = fopen($file_path, "rb");
+		
+		// start uploading		
+		// echo "Uploading: " . $this->fileName . "\n";  
+		
+		$filesize = filesize($file_path);
+		
+		// while not reached the end of file marker keep looping and uploading chunks
+		while (!$status && !feof($handle)) {
+			set_time_limit(120); 
+			$chunk = fread($handle, $chunkSizeBytes);
+			$status = $media->nextChunk($chunk);  
+		}
+		
+		// The final value of $status will be the data from the API for the object
+		// that has been uploaded.
+		$result = false;
+		if($status != false) {
+		  $result = $status;
+		}
+
+		fclose($handle);
+
+		$is_success = false;
+	    
+	    if( isset( $result['name'] ) && !empty( $result['name'] ) ){
+		$is_success = true;
+	    }
+
+	    return $is_success;	
 	}
 }
 ?>

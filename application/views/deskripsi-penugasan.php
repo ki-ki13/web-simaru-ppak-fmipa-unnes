@@ -5,7 +5,7 @@
 	$jenisTugas = $_GET['jenisTugas'];
 	$nama = $user_data['first_name']." ".$user_data['last_name'];
 ?>
-
+	
 <div id="deskripsi">
 	<div class="item" id="top-left">
 		<div class="title">
@@ -37,7 +37,7 @@
 					<input type="submit" name="submit" value="Kumpulkan">
 				</div>
     	</form>
-	</div>
+	</div> 
 
 	<div class="item" id="right">
 		<div class="title">
@@ -46,3 +46,4 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices neque diam erat cursus ipsum, montes, magnis. Nunc posuere risus consequat quis curabitur. Id nec dignissim cursus placerat est ultrices. </p>
 	</div>
 </div>
+
