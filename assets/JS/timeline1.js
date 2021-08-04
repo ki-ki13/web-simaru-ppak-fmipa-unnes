@@ -1,5 +1,5 @@
 //Sample dates
-var dates = ["8/19/2021", "8/20/2021", "8/21/2021"];
+var dates = ["8/16/2021", "8/20/2021", "8/21/2021"];
 //For the purpose of stringifying MM/DD/YYYY date format
 var monthSpan = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 

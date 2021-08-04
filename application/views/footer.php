@@ -1,6 +1,6 @@
 <footer>
             <div class="bag1">
-                <h3>PPKMB FMIPA UNNES</h3>
+                <h3>PKKMB FMIPA UNNES</h3>
                 <span>Website resmi PPKMB FMIPA UNNES 2021</span>
                 <h3>IKUTI KAMI</h3>
                 <div class="medsos">
@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="bag2">
-                <h3>PPAK FMIPA</h3>
+                <h3>PKKMB FMIPA</h3>
                 <ul>
                     <li><a href="<?= site_url('informasi')?>">Informasi</a></li>
                     <li><a href="">Galeri</a></li>

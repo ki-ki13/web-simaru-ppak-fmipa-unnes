@@ -11,7 +11,7 @@
                 <img src="<?= base_url('assets/POTO/Rectangle7.png')?>">
                 <span class="jdl">PKKMB
                     FMIPA <br> 2021</span>
-                <span>Generasi Cerdas, Unggul dan <br> Bermakna</span>
+                <span>Generasi Tangguh, Unggul dan <br> Bermakna</span>
             </div>
         </div>
         
@@ -103,9 +103,9 @@
                         <div id="span">Date Placeholder</div>
                       </div>
                       <div id="mainCont">
-                          <span class="center" id="span0">PPAK1</span>
-                          <span class="right" id="span1">PPAK2</span>
-                          <span class="right" id="span2">PPAK3</span>
+                          <span class="center" id="span0">TM PKKMB 2021</span>
+                          <span class="right" id="span1">Hari I PKKMB 2021</span>
+                          <span class="right" id="span2">Hari II PKKMB 2021</span>
                       </div>
                 </div>
             </div>
@@ -116,33 +116,36 @@
             </div>
         </div>
         <div class="sambutan">
-            <div class="judul">Sambutan</div>
-            <div class="swiper-container mySwiper">
+            <div class="judul">Virtual Tour Fakultas MIPA UNNES</div>
+                <div class="video-jingle" id="vid-sambutan">
+                    <video class="video video-sambutan" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
+                </div>
+            <!-- <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <a href="#" data-hash="slide1" class="swiper-slide">
                         <div class="inside-slide">
                             <div class="video-jingle">
-                                <video class="video video-sambutan" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
+                                <video class="video video-sambutan" controls src="<-?= base_url('assets/video/4tisu.mp4')?>"></video>
                             </div>
                         </div>
-                        <h3>Sambutan Dekan FMIPA</h3>
+                        <h3>Virtual Tour Fakultas MIPA UNNES</h3>
                     </a>
                     <a href="#" data-hash="slide2" class="swiper-slide">
                         <div class="inside-slide">
                             <div class="video-jingle">
-                                <video class="video video-sambutan" controls src="<?= base_url('assets/video/4tisu.mp4')?>"></video>
+                                <video class="video video-sambutan" controls src="<-?= base_url('assets/video/4tisu.mp4')?>"></video>
                             </div>
                         </div>
-                        <h3>Sambutan Wakil Dekan I FMIPA</h3>
+                        <h3>Virtual Tour Fakultas MIPA UNNES</h3>
                     </a>
                     <a href="#" data-hash="slide3" class="swiper-slide">Slide 3</a>
                     <a href="#" data-hash="slide4" class="swiper-slide">Slide 4</a>
                     <a href="#" data-hash="slide5" class="swiper-slide">Slide 5</a>
                     
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+                <<div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> 
                 <div class="swiper-pagination"></div>
-            </div>
+            </div> -->
             
         </div>
