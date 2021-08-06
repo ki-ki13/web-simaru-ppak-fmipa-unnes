@@ -8,6 +8,7 @@
         $this->load->model('kelompok_model');
 		$this->load->model('folderidmodel');
 		$this->load->library('session');
+		$this->load->library('form_validation');
     }
 		public function index(){
 			// $tugas = $this->folderidmodel->getTable('folder');

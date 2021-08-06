@@ -12,7 +12,7 @@
 		<div class="title">
 			<h2>Deskripsi</h2>
 		</div>
-		<p><?= $tgs['deskripsi']?></p>
+		<p style="text-align : justify"><?= $tgs['deskripsi']?></p>
 		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices neque diam erat cursus ipsum, montes, magnis. Nunc posuere risus consequat quis curabitur. Id nec dignissim cursus placerat est ultrices. </p> -->
 	</div>
 	
@@ -46,7 +46,7 @@
 			<h2>Keterangan</h2>
 		</div>
 		<!-- <-?php var_dump($tugas)?> -->
-		<iframe src="<?= $tgs['link_cont']?>"></iframe>
+		<iframe src="<?= $tgs['link_cont']?>" frameborder="0"></iframe>
 	</div>
 	<?php }?>
 </div>

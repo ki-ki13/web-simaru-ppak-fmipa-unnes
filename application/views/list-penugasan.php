@@ -17,8 +17,16 @@
    </div>
 
    <div id="kelompok">
+	    <!-- <form action="<-?= site_url('penugasan/kelompok')?>" method="post">
+			<div id="form-kelompok">
+			<h1>Kelompok : </h1>
+			<input class="isi-kel" name ="kelompok" type="text" placeholder="masukkan nomor kelompok kamu 😊">
+			<input class="submit-kel" type="submit" value ="Post">
+			</div>
+		</form> -->
+		<h1>Kelompok : <?=$noKelompok->kelompok?></h1>
    		<!-- <-?=var_dump($noKelompok->kelompok)?> -->
-   		<h1>Kelompok : <?=$noKelompok->kelompok?></h1>
+   		
    </div>
 
    <div id="list-tugas">

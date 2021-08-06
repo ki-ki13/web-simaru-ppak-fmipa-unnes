@@ -178,6 +178,26 @@
     font-size: 20px;
     width: 500px;
   }
+  #penugasan #kelompok #form-kelompok{
+    flex-direction: column;
+    position: relative;
+  }
+  #penugasan #kelompok #form-kelompok .isi-kel{
+    padding: 10px;
+  }
+  #penugasan #kelompok #form-kelompok h1, #penugasan #kelompok #form-kelompok .isi-kel,#penugasan #kelompok #form-kelompok .submit-kel {
+    margin: 10px 0;
+  }
+  #penugasan #kelompok #form-kelompok .submit-kel{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #penugasan #selamat-datang div:last-child h1 {
+    font-size: 1.3em;
+  }
   #penugasan #selamat-datang div:last-child h1 {
     font-size: 1em;
   }
@@ -352,7 +372,7 @@
   }
   .video-jingle .video {
     margin: 10% auto;
-    width: 70%;
+    width: 90%;
     height: auto;
     border-radius: 20px;
 }
@@ -486,10 +506,31 @@
   #penugasan #kelompok {
     font-size: 15px;
     width: 250px;
+    top: -30px;
   }
   #penugasan #kelompok h1 {
     margin: 0;
     font-size: 1.25em;
+}
+#penugasan #kelompok #form-kelompok{
+  flex-direction: column;
+  /* position: relative; */
+}
+#penugasan #kelompok #form-kelompok .isi-kel{
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
+#penugasan #kelompok #form-kelompok h1, #penugasan #kelompok #form-kelompok .isi-kel,#penugasan #kelompok #form-kelompok .submit-kel {
+  margin: 10px 0;
+  
+}
+#penugasan #kelompok #form-kelompok .submit-kel{
+  height: 40px;
+  width: 100px;
+  position: relative;
+  /*right: 0;
+  bottom: 0; */
 }
   body{
     background: #F6F6F6;
