@@ -125,26 +125,43 @@ class Submit extends CI_Controller {
 				$success = $this->upload_chunk( $file_tmp, $fileName, $folder_id);
 			}
 		    
-		    if( $success){
-				redirect('penugasan?noKelompok=2');
-				
-		    	// echo "<script>alert('File Berhasil Diupload :)');document.location.href = '".site_url('penugasan?noKelompok=2')."'</script>";
-				// echo "file uploaded successfully";
+		    if( $success ){
+				$this->session->set_flashdata(
+                        'pesan',
+                        '<script>
+                                Swal.fire(
+                                "Berhasil!",
+                                "File berhasil diupload",
+                                "success"
+                                );
+                            </script>'
+                    );
+                echo "<script>document.location.href = '".site_url('penugasan')."'</script>";
 		    } else { 
-				echo "<script>alert('Upload gagal, silahkan mencoba lagi');document.location.href = '".site_url('penugasan/deskripsi_penugasan')."'</script>";
+				$this->session->set_flashdata(
+                        'pesan',
+                        '<script>
+                                Swal.fire(
+                                "Oops!",
+                                "File Gagal diupload",
+                                "error"
+                                );
+                            </script>'
+                    );
+                echo "<script>document.location.href = '".site_url('penugasan')."'</script>";
 		    }
 		}
 
 
-		if( isset( $_GET['list'] ) ){
-		    echo "<h1>Retriving List all files and folders from Google Drive</h1>";
-		    //$this->get_files_and_folders("1pwh6xOOmf3nhYjiSeTlqgwpM0talr4kK");
-		    $folderId = "root";
-		    if(isset($_GET['folderId'])){
-		    	$folderId = $_GET['folderId'];
-		    }
-		    $this->get_files_and_folders($folderId);
-		}
+		// if( isset( $_GET['list'] ) ){
+		//     echo "<h1>Retriving List all files and folders from Google Drive</h1>";
+		//     //$this->get_files_and_folders("1pwh6xOOmf3nhYjiSeTlqgwpM0talr4kK");
+		//     $folderId = "root";
+		//     if(isset($_GET['folderId'])){
+		//     	$folderId = $_GET['folderId'];
+		//     }
+		//     $this->get_files_and_folders($folderId);
+		// }
 
 			
 	}
