@@ -30,7 +30,7 @@
     echo '<div align="center">'.$login_button . '</div>';
    }
    ?>
-   </div>
+   </div> 
   </div>
  </body>
 </html>

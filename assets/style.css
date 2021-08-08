@@ -165,12 +165,12 @@ main .cub-back img, main .cub-back2 img{
   display: flex;
 }
 
-/* .video-jingle .video{
+.video-jingle .video{
   margin: 0 auto;
   width: 70%;
   height: auto;
   border-radius: 20px;
-} */
+}
 /* .video-jingle .video.video-sambutan {
   margin: auto;
   width: 90%;

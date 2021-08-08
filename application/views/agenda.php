@@ -48,7 +48,7 @@
                 spaceBetween: 50
             },
             600:{
-                slidesPerView: 1,
+                slidesPerView: 1, 
                 spaceBetween: 50
             },
                 // when window width is >= 640px
