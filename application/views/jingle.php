@@ -23,7 +23,7 @@
                         <div class="lirik">
                         <pre>
 Universitas Negeri Semarang
-Menjulang setinggi angkasa
+Menjulang setinggi angkasa 
 Mencetak insan yang akademis 
 Berkarakter serta berdaya guna
 

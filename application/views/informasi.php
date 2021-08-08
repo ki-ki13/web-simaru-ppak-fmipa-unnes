@@ -25,7 +25,7 @@
                 <span>Buku Panduan</span>
             </div>
         </a>
-        <a href="<?= site_url('informasi/penugasan')?>" class="flex" id ="flex3">
+        <a href="<?= site_url('penugasan?noKelompok=2')?>" class="flex" id ="flex3">
             <div class="flex-content">
                 <i class="fal fa-pencil-ruler"></i>
                 <span>Penugasan</span>

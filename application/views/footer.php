@@ -18,7 +18,7 @@
                 </ul>
             </div>
             <div class="bag3">
-                <h3>Jurusan</h3>
+                <h3>Jurusan</h3> 
                 <ul>
                     <li><a href="https://matematika.unnes.ac.id/">Matematika</a></li>
                     <li><a href="http://fisika.unnes.ac.id/main/">Fisika</a></li>

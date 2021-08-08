@@ -1,8 +1,8 @@
 <?php
 	$user_data = $this->session->userdata('user_data');
-	// $namaTugas = $_GET['namaTugas'];
-	$noKelompok = $_GET['noKelompok'];
-	// $jenisTugas = $_GET['jenisTugas'];
+	$namaTugas = $_GET['namaTugas'];
+	// $noKelompok = $_GET['noKelompok'];
+	$jenisTugas = $_GET['jenisTugas'];
 	$nama = $user_data['first_name']." ".$user_data['last_name'];
 ?>
 	
@@ -26,11 +26,11 @@
 			        
 
 			        <div class="properties" style="display: none">
-			        	<!-- <input type="text" name="namaFile" id="namaFile" value="<-?=$nama?>"><br>
-						<input type="text" name="jenisTugas" placeholder="jenis file" value="<-?=$jenisTugas?>"><br>
-						<input type="text" name="kelompok" placeholder="kelompok" value="<-?=$noKelompok?>"><br>
-						<input type="text" name="namaTugas" placeholder="namaTugas" value="<-?=$namaTugas?>"><br>
-						<input type="text" name="" id="pathFile"> -->
+			        	<input type="text" name="namaFile" id="namaFile" value="<?=$nama?>"><br>
+						<input type="text" name="jenisTugas" placeholder="jenis file" value="<?=$jenisTugas?>"><br>
+						<input type="text" name="kelompok" placeholder="kelompok" value="<?=$noKelompok?>"><br>
+						<input type="text" name="namaTugas" placeholder="namaTugas" value="<?=$namaTugas?>"><br>
+						<input type="text" name="" id="pathFile">
 			        </div>
 			        
 				</div>
