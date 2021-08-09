@@ -3,7 +3,7 @@
         <div class="tatatertib">
             <h1>Tata Tertib PPAK FMIPA 2021</h1>
             <!-- <embed src="TataTertibPanitiaPraAcaraPPAK2021(1).pdf" type="application/pdf"> -->
-            <iframe src="https://drive.google.com/file/d/1kqCTjE_Z9L2a1tPTJ7_RuwCbFt7Iqqzv-/preview"></iframe> 
+            <iframe src="https://drive.google.com/file/d/1kqCTjE_Z9L2a1tPTJ7_RuwCbFt7Iqqzv/preview"></iframe> 
             <!-- <iframe  src="https://drive.google.com/file/d/1ZSDh5aSw8NulL4lacgNKC_oTzwjBODL-/preview"></iframe> -->
             <!-- pake gdrive preview ae -->
             <div class="donlod">

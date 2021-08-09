@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="logo inside-kotak">
-                <img src="<?= base_url('assets/POTO/Group78.png')?>">
+                <img src="<?= base_url('assets/POTO/logo-shadow.png')?>">
             </div>
         </div>
         <div class="info">
@@ -63,25 +63,26 @@
             </div>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
-                    <a href="#" data-hash="slide1" class="swiper-slide">
-                        <div class="inside-slide">
-                            <p>
-                                Di tahun 2021 ini PKKMB FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
-                            </p>
-                        </div>
-                        <h3>Kalender Akademik</h3>
+                    <a href="<?=site_url('informasi/bukpan')?>" data-hash="slide1" class="swiper-slide">
+                        <img class="inside-slide" src="<?=base_url('assets/info-terkini/bukpan.png')?>">
+                        <h3>Buku Panduan PKKMB FMIPA 2021</h3>
                     </a>
                     <a href="#" data-hash="slide2" class="swiper-slide">
-                        <div class="inside-slide">
-                            <p>
-                                Di tahun 2021 ini PKKMB FMIPA UNNES mengusung tema “Bangkitkan Inspirator Muda Dalam Mewujudkan Generasi yang Adaptif,Produktif,Inovatif dan Kontributif Menuju FMIPA yang Berdedikasi dan Berprestasi”. Dengan tema tersebut berharap mahasiswa baru FMIPA bisa menjadi inspirator yang adaptif, produktif, inovatif dan dapat berkontribusi untuk FMIPA.
-                            </p>
-                        </div>
-                        <h3>Kalender Akademik</h3>
+                        <img class="inside-slide" src="<?=base_url('assets/info-terkini/papermob.png')?>">
+                        <h3>Tutorial Papermob PKKMB FMIPA 2021</h3>
                     </a>
-                    <a href="#" data-hash="slide3" class="swiper-slide">Slide 3</a>
-                    <a href="#" data-hash="slide4" class="swiper-slide">Slide 4</a>
-                    <a href="#" data-hash="slide5" class="swiper-slide">Slide 5</a>
+                    <a href="<?=site_url('informasi/jingle')?>" data-hash="slide3" class="swiper-slide">
+                    <img class="inside-slide" src="<?=base_url('assets/info-terkini/lagu.png')?>">
+                        <h3>Jingle PKKMB FMIPA 2021</h3>
+                    </a>
+                    <a href="#" data-hash="slide4" class="swiper-slide">
+                        <img class="inside-slide" src="<?=base_url('assets/info-terkini/tanaman.png')?>">
+                        <h3>Info Tanaman PKKMB FMIPA 2021</h3>
+                    </a>
+                    <a href="<?=site_url('informasi/agenda')?>" data-hash="slide5" class="swiper-slide">
+                        <img class="inside-slide" src="<?=base_url('assets/info-terkini/agenda.png')?>">
+                        <h3>Agenda PKKMB FMIPA 2021</h3>
+                    </a>
                     
                 </div>
                 <!-- <div class="swiper-button-next"></div>

@@ -191,8 +191,8 @@ main .cub-back img, main .cub-back2 img{
   text-align: center;
 }
 .apa .logo img{
-  width: 300px;
-  margin: 15% 0;
+  width: 500px;
+  margin: 0;
 }
 .apa .judul{
   padding: 5% 0 2% 14%;
@@ -222,7 +222,6 @@ main .cub-back img, main .cub-back2 img{
   color: white;
 }
 .inside-slide{
-  background-color: white;
   border-radius: 10px;
   cursor: grab;
 }
