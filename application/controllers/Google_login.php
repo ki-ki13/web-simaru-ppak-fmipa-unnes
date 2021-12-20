@@ -16,9 +16,9 @@ class Google_login extends CI_Controller {
 
   $google_client = new Google_Client();
 
-  $google_client->setClientId('159925294652-bq4j3u0v7j5jakffcjmfhq1koo08k13b.apps.googleusercontent.com'); //Define your ClientID
+  $google_client->setClientId('ClientID'); //Define your ClientID
 
-  $google_client->setClientSecret('HmonzQ3urCdftb2TJkqBCJU_'); //Define your Client Secret Key
+  $google_client->setClientSecret('ClientSecretKey'); //Define your Client Secret Key
 
   $google_client->setRedirectUri('http://localhost/web-simaru-ppak-fmipa-unnes/beranda'); //Define your Redirect Uri
   $google_client->createAuthUrl();
